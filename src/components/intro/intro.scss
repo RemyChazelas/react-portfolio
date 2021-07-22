@@ -16,22 +16,37 @@
     .imgContainer {
       width: 700px;
       height: 700px;
-      background-color: crimson;
-      border-radius: 50%;
+      background-color: #9d59d9;
+      background-blend-mode: multiply;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
-
+      border: 10px solid #f5e2ff;
+      animation: morph 8s ease-in-out infinite 1s;
+      /** ANIMATIONS **/
+      @keyframes morph {
+        0% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+        }
+        50% {
+          border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+        }
+        100% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+        }
+      }
       @include mobile{
-        align-items: flex-start;
+        // align-items: center;
+        height: 400px;
+        width: 400px;
       }
 
       img {
         height: 90%;
-
         @include mobile{
-          height: 50%;
+          height: 80%;
         }
       }
     }
@@ -56,13 +71,21 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        color: transparent;
+        background: #111111;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 
         @include mobile{
           font-size: 40px;
         }
+
       }
       h2 {
         font-size: 35px;
+        padding-top: 20px;
       }
       h3 {
         font-size: 30px;
@@ -73,7 +96,12 @@
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: transparent;
+          background: #111111;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
         }
 
         .ityped-cursor {
