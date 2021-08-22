@@ -1,5 +1,8 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -17,6 +20,17 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <Mail className="icon" />
                         <span>remychazelas@gmail.com</span>
                     </div>
+                    <div className="socialNetwork">
+                        <a href="https://www.linkedin.com/in/r%C3%A9my-chazelas-4837bb20b/" target="_blank" rel="noopener noreferrer">
+                            <LinkedInIcon />
+                        </a>
+                    </div>
+                    <div className="socialNetwork">
+                        <a href="https://github.com/RemyChazelas" target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon />
+                        </a>
+                    </div>
+
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -26,6 +40,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
