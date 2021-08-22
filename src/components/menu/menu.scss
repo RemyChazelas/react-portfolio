@@ -37,7 +37,7 @@
       @include mobile{
         display: inherit;
       } 
-      span {
+      div {
         font-weight: 500;
         text-decoration: underline  chartreuse;       
       }
@@ -67,6 +67,9 @@
       a:hover:before {
         visibility: visible;
         width: 100%;
+      }
+      span{
+        color: chartreuse;
       }
     }
 

@@ -38,7 +38,6 @@
         }
       }
       @include mobile{
-        // align-items: center;
         height: 400px;
         width: 400px;
       }
@@ -72,14 +71,28 @@
         font-size: 60px;
         margin: 10px 0;
         color: transparent;
-        background: #111111;
+        background: $mainColor;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile{
           font-size: 40px;
+        }
+        span{
+          font-size: 80px;
+          margin: 10px 0;
+          color: transparent;
+          background: $color-5;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          text-shadow: 0px 3px 3px $color-1;
+
+          @include mobile{
+            font-size: 60px;
+          }
         }
 
       }
@@ -87,20 +100,20 @@
         font-size: 35px;
         padding-top: 20px;
         color: transparent;
-        background: #111111;
+        background: $mainColor;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+        text-shadow: 0px 3px 3px $color-4;
       }
       h3 {
         font-size: 30px;
         color: transparent;
-        background: #111111;
+        background: $mainColor;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile{
           font-size: 20px;
@@ -109,11 +122,11 @@
         span {
           font-size: inherit;
           color: transparent;
-          background: #111111;
+          background: $mainColor;
           -webkit-background-clip: text;
           -moz-background-clip: text;
           background-clip: text;
-          text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+          text-shadow: 0px 3px 3px $color-4;
         }
 
         .ityped-cursor {

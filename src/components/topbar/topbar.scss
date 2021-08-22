@@ -21,15 +21,32 @@
       align-items: center;
 
       .logo {
+        margin-top: -5px;
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
-        color: inherit;
         margin-right: 40px;
+        color: transparent;
+        background: $mainColor;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile{
           margin-right: 10px;
           font-size: 30px;
+        }
+
+        span{
+          font-size: 45px;
+          margin: 10px 0;
+          color: transparent;
+          background: $color-5;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          text-shadow: 0px 3px 3px $color-1;
         }
       }
 
@@ -37,6 +54,7 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+        padding: 5px 0 0 0 ;
 
         @include mobile{
           margin-left: 15px;

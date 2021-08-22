@@ -3,6 +3,7 @@
 .contact {
   background-color: white;
   display: flex;
+  
 
   @include mobile {
     flex-direction: column;
@@ -23,53 +24,125 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      padding-top: 10px;
+    }
+
     h2 {
       font-size: 30px;
+      color: transparent;
+      background: $mainColor;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 3px 3px $color-4;
+      padding-bottom: 20px;
+      
+      @include mobile {
+        padding-bottom: 10px;
+        font-size: 20px;
+
+      }
+
+      span{
+        font-size: 40px;
+        margin: 10px 0;
+        color: transparent;
+        background: $color-5;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px $color-1;
+
+        @include mobile {
+        font-size: 25px;
+  
+        }
+      }
     }
 
     form {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
       width: 70%;
       height: 70%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px $mainColor;
+
+      @include mobile {
+        width: 300px;
+      }
 
       input {
-        width: 300px;
-        height: 30px;
+        margin-bottom: 10px;
+        width: 75%;
+        height: 50px;
         font-size: 14px;
+        border: none;
+        border-bottom: 1px solid $mainColor;
+        border-radius: 10px;
+        background-color: $color-3;
+
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
-          width: 200px;
-          height: 20px;
+          height: 30px;
+          margin: 10px 0 10px 0;
         }
       }
 
       textarea {
-        width: 300px;
-        height: 200px;
+        margin-bottom: 10px;
+        width: 75%;
+        height: 150px;
         font-size: 14px;
+        border: none;
+        border-bottom: 1px solid $mainColor;
+        border-radius: 10px;
+        background-color: $color-3;
+        resize: none;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
-          width: 200px;
           height: 100px;
         }
       }
 
       button {
+        margin-bottom: 10px;
         width: 150px;
         height: 30px;
         color: white;
-        background-color: #240046;
+        background-color: $mainColor;
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
 
+        @include mobile {
+          margin: 0;
+        }
+
         &:focus {
           outline: none;
         }
+
+        &:hover{
+          transition: .5s;
+          transform: scale(1.1);
+          background-color: $color-2;
+      }
+
       }
 
       span {
