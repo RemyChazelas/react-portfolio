@@ -23,11 +23,28 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Salut, je suis </h2>
+                    <ul>
+                        <li>s</li>
+                        <li>i</li>
+                        <li>u</li>
+                        <li>s</li>
+                        <li>&nbsp;</li>
+                        <li>e</li>
+                        <li>j</li>
+                        <li>&nbsp;</li>
+                        <li>,</li>
+                        <li>t</li>
+                        <li>u</li>
+                        <li>l</li>
+                        <li>a</li>
+                        <li>S</li>
+                    </ul>
                     <h1><span>R</span>émy</h1>
                     <h3>
-                        développeur web junior <span ref={textRef}></span>
+                        Développeur web junior <span ref={textRef}></span>
                     </h3>
+                    <h4>A propos de moi :</h4>
+                    <p>Après de nombreuses expériences dans difféfents domaines, je me reconverti dans le développement web.</p>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="" />

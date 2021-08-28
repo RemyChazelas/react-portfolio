@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .works {
-  background-color: #240046;
+  background-color: $mainColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@
               width: 40px;
               height: 40px;
               border-radius: 50%;
-              background-color: rgb(245, 179, 155);
+              background-color: $color-1;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -110,13 +110,13 @@
             h2 {
               font-size: 20px;
 
-              @include mobile{
+              @include mobile {
                 font-size: 13px;
               }
             }
             p {
               font-size: 13px;
-              @include mobile{
+              @include mobile {
                 display: none;
               }
             }

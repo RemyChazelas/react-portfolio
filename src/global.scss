@@ -1,4 +1,4 @@
-$mainColor: #240046;
+$mainColor: #30005e;
 $color-1: chartreuse;
 $color-2: #9d59d9;
 $color-3: #9d59d918;
@@ -8,7 +8,7 @@ $color-5: rgba(128, 255, 0, 0.5);
 $width: 1000px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }

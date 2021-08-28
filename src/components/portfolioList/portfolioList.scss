@@ -7,16 +7,12 @@
   border-radius: 10px;
   cursor: pointer;
 
-  @include mobile{
+  @include mobile {
     margin-right: 20px;
   }
 
   &.active {
-    background-color: $mainColor;
+    background-color: $color-2;
     color: white;
   }
-  &.active:hover{
-    transition: .5s;
-    background-color: $color-2;
-}
 }
