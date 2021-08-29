@@ -24,20 +24,20 @@ export default function Intro() {
             <div className="right">
                 <div className="wrapper">
                     <ul>
-                        <li>s</li>
-                        <li>i</li>
-                        <li>u</li>
-                        <li>s</li>
-                        <li>&nbsp;</li>
-                        <li>e</li>
-                        <li>j</li>
-                        <li>&nbsp;</li>
-                        <li>,</li>
-                        <li>t</li>
-                        <li>u</li>
-                        <li>l</li>
-                        <li>a</li>
                         <li>S</li>
+                        <li>a</li>
+                        <li>l</li>
+                        <li>u</li>
+                        <li>t</li>
+                        <li>,</li>
+                        <li>&nbsp;</li>
+                        <li>j</li>
+                        <li>e</li>
+                        <li>&nbsp;</li>
+                        <li>s</li>
+                        <li>u</li>
+                        <li>i</li>
+                        <li>s</li>
                     </ul>
                     <h1><span>R</span>émy</h1>
                     <h3>

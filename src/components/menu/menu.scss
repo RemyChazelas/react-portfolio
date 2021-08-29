@@ -15,8 +15,6 @@
   transition: all 1s ease;
   overflow: hidden;
 
-
-
   &.active {
     right: 0;
   }
@@ -30,16 +28,15 @@
     color: white;
     width: 60%;
 
-    .menuContainer{
+    .menuContainer {
       display: none;
-    
 
-      @include mobile{
+      @include mobile {
         display: inherit;
-      } 
+      }
       div {
         font-weight: 500;
-        text-decoration: underline  chartreuse;       
+        text-decoration: underline chartreuse;
       }
     }
 
@@ -62,21 +59,19 @@
         transition: all 0.3s ease-in-out;
       }
       a:hover {
-        font-weight: 600;        
-      } 
+        font-weight: 600;
+      }
       a:hover:before {
         visibility: visible;
         width: 100%;
       }
-      span{
+      span {
         color: chartreuse;
       }
     }
 
-    @include mobile{
+    @include mobile {
       font-size: 15px;
-    }    
+    }
   }
-
- 
 }

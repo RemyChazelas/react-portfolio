@@ -4,11 +4,19 @@ $color-2: #9d59d9;
 $color-3: #9d59d918;
 $color-4: #9d59d98e;
 $color-5: rgba(128, 255, 0, 0.5);
+$error: rgb(240, 25, 25);
 
-$width: 1000px;
+$mobileWidth: 500px;
+$tabWidth: 1060px;
 
 @mixin mobile {
-  @media (max-width: #{$width}) {
+  @media (max-width: #{$mobileWidth}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: #{$tabWidth}) {
     @content;
   }
 }
