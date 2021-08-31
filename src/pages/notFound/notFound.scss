@@ -1,0 +1,76 @@
+@import "../../global.scss";
+
+.notFound {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .NotFoundContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+      margin: 605px 0 0 50px;
+      color: #859ddb;
+      position: absolute;
+      font-size: 2rem;
+      text-decoration: underline $color-1;
+      z-index: 10;
+
+      @include mobile {
+        margin: 388px 0 0 24px;
+        font-size: 16px;
+      }
+
+      @include tab {
+        margin: 410px 0 0 32px;
+        font-size: 22px;
+      }
+    }
+
+    h2 {
+      text-decoration: underline $color-1;
+      margin: 700px 0 0 20px;
+      color: #859ddb;
+      position: absolute;
+      font-size: 3rem;
+      z-index: 10;
+      border-radius: 10px;
+      padding: 0 10px;
+      display: flex;
+
+      &:hover {
+        letter-spacing: 5px;
+        transition: 0.5s;
+      }
+      @include mobile {
+        margin: 420px 0 0 20px;
+        font-size: 25px;
+      }
+
+      @include tab {
+        margin: 470px 0 0 32px;
+        font-size: 30px;
+      }
+    }
+
+    img {
+      margin-top: 200px;
+      transform: scale(2);
+      display: flex;
+      position: absolute;
+      z-index: 10;
+
+      @include mobile {
+        margin-top: 190px;
+        height: 150px;
+      }
+      @include tab {
+        margin-top: 150px;
+        height: 200px;
+      }
+    }
+  }
+}

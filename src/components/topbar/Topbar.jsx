@@ -1,17 +1,17 @@
-import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import { NavLink } from "react-router-dom";
+import { Person, Mail } from "@material-ui/icons";
+
+import "./topbar.scss";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">
-                        <span>R</span>C
-                    </a>
+                   <NavLink to="/" className="logo" ><span>R</span>C</NavLink>                 
                     <div className="itemContainer">
                         <Person className="icon" />
                         <span>06 66 62 19 83</span>

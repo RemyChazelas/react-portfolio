@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./menu.scss";
 
 
@@ -6,7 +7,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <div className={"menu " + (menuOpen && "active")}>
             <ul>
                 <li onClick={() => setMenuOpen(false)}>
-                    <a href="#intro"><span>A</span>ccueil</a>
+                    <Link to="/"><span>A</span>ccueil</Link>
                 </li>
                 <li onClick={() => setMenuOpen(false)}>
                     <a href="#portfolio"><span>P</span>rojets</a>

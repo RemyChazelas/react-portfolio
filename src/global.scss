@@ -16,7 +16,7 @@ $tabWidth: 1060px;
 }
 
 @mixin tab {
-  @media (max-width: #{$tabWidth}) {
+  @media (min-width: 501px) and (max-width: #{$tabWidth}) {
     @content;
   }
 }
