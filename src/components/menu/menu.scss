@@ -14,9 +14,11 @@
   justify-content: center;
   transition: all 1s ease;
   overflow: hidden;
+  z-index: 20;
 
   &.active {
     right: 0;
+    z-index: 20;
   }
 
   ul {

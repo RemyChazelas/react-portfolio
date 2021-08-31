@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 
 .notFound {
   height: 100vh;
@@ -12,27 +13,27 @@
     align-content: center;
 
     h1 {
-      margin: 605px 0 0 50px;
-      color: #859ddb;
+      margin: 675px 0 0 50px;
+      color: #859ddbd5;
       position: absolute;
-      font-size: 2rem;
-      text-decoration: underline $color-1;
+      font-size: 60px;
       z-index: 10;
+      font-family: "ZCOOL KuaiLe", cursive;
 
       @include mobile {
-        margin: 388px 0 0 24px;
-        font-size: 16px;
+        margin: 390px 0 0 0;
+        font-size: 20px;
       }
 
       @include tab {
-        margin: 410px 0 0 32px;
-        font-size: 22px;
+        margin: 450px 0 0 32px;
+        font-size: 35px;
       }
     }
 
     h2 {
       text-decoration: underline $color-1;
-      margin: 700px 0 0 20px;
+      margin: 750px 0 0 20px;
       color: #859ddb;
       position: absolute;
       font-size: 3rem;
@@ -46,13 +47,13 @@
         transition: 0.5s;
       }
       @include mobile {
-        margin: 420px 0 0 20px;
+        margin: 420px 0 0 10px;
         font-size: 25px;
       }
 
       @include tab {
-        margin: 470px 0 0 32px;
-        font-size: 30px;
+        margin: 500px 0 0 10px;
+        font-size: 40px;
       }
     }
 
@@ -62,10 +63,11 @@
       display: flex;
       position: absolute;
       z-index: 10;
+      opacity: 0.8;
 
       @include mobile {
         margin-top: 190px;
-        height: 150px;
+        height: 130px;
       }
       @include tab {
         margin-top: 150px;

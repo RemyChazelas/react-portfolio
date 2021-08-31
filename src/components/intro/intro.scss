@@ -188,7 +188,7 @@
         }
         @include tab {
           font-size: 14px;
-          width: 300px;
+          width: 400px;
         }
       }
 
@@ -242,11 +242,11 @@
       left: 40%;
 
       @include mobile {
-        bottom: 105px;
-        left: 50%;
+        bottom: 185px;
+        left: 10%;
       }
       @include tab {
-        bottom: 0;
+        bottom: 165px;
         left: 50%;
       }
       img {
