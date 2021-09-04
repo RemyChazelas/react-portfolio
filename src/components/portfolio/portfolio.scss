@@ -56,8 +56,12 @@
     @include mobile {
       padding: 20px 0 20px 0;
       margin: 10px 0;
-      flex-wrap: wrap;
       justify-content: center;
+    }
+    li {
+      @include mobile {
+        font-size: 11px;
+      }
     }
   }
 
@@ -96,9 +100,30 @@
         position: absolute;
         font-size: 20px;
         text-align: center;
+        text-decoration: underline $color-1;
+
+        @include mobile {
+          font-size: 12px;
+          background-color: $color-6;
+          border-radius: 5px;
+          padding: 5px;
+        }
+        @include tab {
+          font-size: 16px;
+
+          background-color: $color-6;
+          border-radius: 5px;
+          padding: 5px;
+        }
       }
 
-      img {
+      a {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      a img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -108,7 +133,7 @@
       &:hover {
         background-color: $mainColor;
         img {
-          opacity: 0.4;
+          opacity: 0.3;
           z-index: 0;
         }
       }

@@ -6,36 +6,82 @@ export default function Works() {
     const data = [
         {
             id: "1",
-            icon: "./assets/mobile.png",
-            title: "Web Design",
+            icon: "assets/logo-cineflix.png",
+            title: "Cineflix",
             desc:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                "Création d'une WebApp qui utilise une API publique en utilisant React, un backend très simple avec express utilisation de SCRUM ainsi que Git et Github pour le travail collaboratif avec Trello.",
             img:
-                "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+                "assets/cineflix-rogne.png",
+            link:"https://cineflix-wcs-p2.netlify.app/home",
         },
         {
             id: "2",
-            icon: "./assets/globe.png",
-            title: "Mobile Application",
+            icon: "./assets/tetris-icon.png",
+            title: "Tetris App",
             desc:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "Réplique du célèbre jeu Tétris en React & TypeScipt, réalisé grâce à un tuto.",
             img:
-                "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+                "assets/tetris-rogne.png",
+                link:"https://tetris-rc.netlify.app/",
         },
         {
             id: "3",
-            icon: "./assets/writing.png",
-            title: "Branding",
+            icon: "./assets/yoga-icon.png",
+            title: "Yoga App",
             desc:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "Application de Yoga réalisée en Vanilla JavaScript.",
             img:
-                "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+                "assets/yoga-rogne.png",
+                link:"https://yoga-rc.netlify.app/",
+
+        },
+        {
+            id: "4",
+            icon: "./assets/flag-icon.png",
+            title: "Flag App",
+            desc:
+                "Application qui permet de voir les informations d'un en survolant son drapeau, réalisé en React et en utilisant une API.",
+            img: "assets/flag-rogne.png",
+            link: "https://flag-react.netlify.app/", 
+        },
+        {
+            id: "5",
+            icon: "./assets/shifumi-icon.png",
+            title: "Shi Fu Mi App",
+            desc:
+                "Ce challenge à été réalisé en HTML, CSS et JavaScript. Je l'ai trouvé sur frontendmentor.io.",
+            img: "assets/shifumi-rogne.png",
+
+            link: "https://shi-fu-mi.netlify.app/",
+ 
+        },
+        {
+            id: "6",
+            icon: "./assets/joke-icon.png",
+            title: "Joke App",
+            desc:
+                "Ce générateur de blagues à été réalisé en HTML, CSS et JavaScript. J'ai utilisé une API existante pour les blagues et j'ai créé une API pour inclure aléatoirement des émojis ascii.",
+            img: "assets/joke-rogne.png",
+
+            link: "https://joke-app-rc.netlify.app/",
+ 
+        },
+        {
+            id: "",
+            icon: "./assets/million-icon.png",
+            title: "Qui Veut Gagner Des Millions",
+            desc:
+                "Réplique du célèbre jeu Qui Veut Gagner Des Millions, créer en React.",
+            img: "assets/million-rogne.png",
+
+            link: "https://qui-veut-gagner-des-millions.netlify.app/",
+ 
         },
     ];
 
     const handleClick = (way) => {
         way === "left"
-            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 6)
             : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     };
 
@@ -55,12 +101,12 @@ export default function Works() {
                                     </div>
                                     <h2>{d.title}</h2>
                                     <p>{d.desc}</p>
-                                    <span>Projects</span>
+                                    <a rel="noopener noreferrer" href={d.link} target="_blank">Projet</a>
                                 </div>
                             </div>
                             <div className="right">
                                 <img
-                                    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                                    src={d.img}
                                     alt=""
                                 />
                             </div>
