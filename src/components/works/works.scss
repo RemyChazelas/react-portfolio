@@ -160,6 +160,9 @@
             @include tab {
               transform: rotate(10deg) scale(0.8);
             }
+            @include mobile {
+              transform: rotate(10deg) scale(0.9);
+            }
           }
         }
       }

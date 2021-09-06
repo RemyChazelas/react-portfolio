@@ -58,15 +58,18 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className="item">
-                        <a rel="noopener noreferrer" href={d.link} target="_blank">  
+                    <a 
+                    rel="noopener noreferrer" 
+                    href={d.link} 
+                    target="_blank"
+                    className="item" 
+                    style={ d.link === "" ? {cursor: "not-allowed"} : {cursor: "pointer"}}>
                             <img
                                 src={d.img}
                                 alt=""
                             />
-                        </a>
                         <h3>{d.title}</h3>
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>

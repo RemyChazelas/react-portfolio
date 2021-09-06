@@ -10,7 +10,7 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["ReactJS", "NodeJS"],
+            strings: ["ReactJS.", "NodeJS."],
         });
     }, []);
 
@@ -46,7 +46,7 @@ export default function Intro() {
                     <h4>A propos de moi :</h4>
                     <p>Après de nombreuses expériences dans différents domaines, je me reconverti dans le développement web. Ambitieux et désireux d'apprendre de nouveaux languages de programmation, je souhaite monter rapidement en compétence. La programmation étant une passion, je suis capable de m'autoformer et d'effectuer des veilles technologiques.</p>
                 </div>
-                <a href="#portfolio">
+                <a href="#works">
                     <img src="assets/down.png" alt="" />
                 </a>
             </div>

@@ -6,6 +6,16 @@ export default function Works() {
     const data = [
         {
             id: "1",
+            icon: "assets/wecode-icon.png",
+            title: "WECODE",
+            desc:
+                "Création d'un site vitrine responsive : WECODE (maquette Figma, page d’accueil, diverses pages sur des thèmes différents liés au développement).",
+            img:
+                "assets/wecode-rogne.png",
+            link:"https://we-code.netlify.app/",
+        },
+        {
+            id: "2",
             icon: "assets/logo-cineflix.png",
             title: "Cineflix",
             desc:
@@ -15,7 +25,7 @@ export default function Works() {
             link:"https://cineflix-wcs-p2.netlify.app/home",
         },
         {
-            id: "2",
+            id: "3",
             icon: "./assets/tetris-icon.png",
             title: "Tetris App",
             desc:
@@ -25,7 +35,7 @@ export default function Works() {
                 link:"https://tetris-rc.netlify.app/",
         },
         {
-            id: "3",
+            id: "4",
             icon: "./assets/yoga-icon.png",
             title: "Yoga App",
             desc:
@@ -36,16 +46,16 @@ export default function Works() {
 
         },
         {
-            id: "4",
+            id: "5",
             icon: "./assets/flag-icon.png",
             title: "Flag App",
             desc:
-                "Application qui permet de voir les informations d'un en survolant son drapeau, réalisé en React et en utilisant une API.",
+                "Application qui permet de voir les informations d'un pays en survolant son drapeau, réalisé en React et en utilisant une API.",
             img: "assets/flag-rogne.png",
             link: "https://flag-react.netlify.app/", 
         },
         {
-            id: "5",
+            id: "6",
             icon: "./assets/shifumi-icon.png",
             title: "Shi Fu Mi App",
             desc:
@@ -56,7 +66,7 @@ export default function Works() {
  
         },
         {
-            id: "6",
+            id: "7",
             icon: "./assets/joke-icon.png",
             title: "Joke App",
             desc:
@@ -67,7 +77,7 @@ export default function Works() {
  
         },
         {
-            id: "",
+            id: "8",
             icon: "./assets/million-icon.png",
             title: "Qui Veut Gagner Des Millions",
             desc:
@@ -81,12 +91,12 @@ export default function Works() {
 
     const handleClick = (way) => {
         way === "left"
-            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 6)
+            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 7)
             : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     };
 
     return (
-        <div className="works">
+        <div className="works" id="works">
             <div
                 className="slider"
                 style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
