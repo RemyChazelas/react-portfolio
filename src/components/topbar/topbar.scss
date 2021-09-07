@@ -55,11 +55,41 @@
       .socialNetwork {
         display: flex;
         align-items: center;
-        margin-left: 30px;
-        padding: 5px 0 0 0;
 
         @include mobile {
           margin-left: 15px;
+        }
+
+        a {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          margin: 5px 15px;
+          transform-style: preserve-3d;
+          perspective: 500px;
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+          transition: background 0.3s;
+
+          @include mobile {
+            width: 40px;
+          }
+          @include tab {
+            width: 60px;
+          }
+        }
+
+        a:hover {
+          background: rgb(128, 255, 0);
+          background: radial-gradient(
+            circle,
+            rgba(128, 255, 0, 1) 0%,
+            $color-2 100%
+          );
         }
       }
 

@@ -21,13 +21,21 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <span>remychazelas@gmail.com</span>
                     </div>
                     <div className="socialNetwork">
-                        <a href="https://www.linkedin.com/in/r%C3%A9my-chazelas-4837bb20b/" target="_blank" rel="noopener noreferrer">
-                            <LinkedInIcon />
+                        <a 
+                        href="https://www.linkedin.com/in/r%C3%A9my-chazelas-4837bb20b/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            <LinkedInIcon className="socialIcon"/>
                         </a>
                     </div>
                     <div className="socialNetwork">
-                        <a href="https://github.com/RemyChazelas" target="_blank" rel="noopener noreferrer">
-                            <GitHubIcon />
+                        <a 
+                        href="https://github.com/RemyChazelas" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            <GitHubIcon className="socialIcon"/>
                         </a>
                     </div>
 
