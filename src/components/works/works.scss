@@ -7,6 +7,7 @@
   justify-content: center;
   position: relative;
   height: 100vh;
+  border-bottom: 1px solid chartreuse;
 
   @include mobile {
     height: 50vh;
@@ -67,12 +68,13 @@
 
       .item {
         width: 700px;
-        height: 100%;
-        background-color: white;
+        height: 95%;
+        background-color: rgb(255, 255, 255);
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid chartreuse;
 
         @include mobile {
           width: 80%;

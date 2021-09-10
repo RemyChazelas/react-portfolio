@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+  border-bottom: 1px solid chartreuse;
+  border-top: 1px solid chartreuse;
 
   @include mobile {
     padding-top: 20px;
@@ -84,7 +86,6 @@
       width: 220px;
       height: 150px;
       border-radius: 20px;
-      border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
       display: flex;
       align-items: center;
@@ -129,6 +130,9 @@
           opacity: 0.3;
           z-index: 0;
         }
+      }
+      &:hover {
+        border: 1px solid chartreuse;
       }
     }
   }

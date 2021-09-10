@@ -67,6 +67,8 @@
   .right {
     flex: 0.5;
     position: relative;
+    overflow-y: hidden;
+
     @include tab {
       flex: 0.55;
       padding-top: 100px;

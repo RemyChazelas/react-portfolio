@@ -8,7 +8,17 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  transition-timing-function: ease-in;
   transition: all 1s ease;
+
+  &.scrolled {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    // z-index: 1;
+  }
 
   .wrapper {
     padding: 10px 30px;
@@ -66,12 +76,14 @@
 
         a {
           position: relative;
+          background-color: rgba(255, 255, 255, 0.322);
           display: inline-block;
           width: 60px;
-          height: 40px;
+          height: 35px;
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 1px solid chartreuse;
           border-radius: 5px;
           margin: 5px 15px;
           transform-style: preserve-3d;
@@ -142,7 +154,7 @@
   }
 
   &.active {
-    background-color: $mainColor;
+    background: $mainColor;
     color: white;
     z-index: 30;
 

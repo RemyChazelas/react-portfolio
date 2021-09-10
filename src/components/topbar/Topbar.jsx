@@ -3,31 +3,21 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { NavLink } from "react-router-dom";
 import { Person, Mail } from "@material-ui/icons";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import "./topbar.scss";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 
-    const [show, setShow] = useState(true);
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    const controlNav = () => {
-        if (window.scrollY>100) {
-            setShow(false);
-        } else {
-            setShow(true)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', controlNav)
-        return () => {
-            window.removeEventListener('scroll', controlNav)
-        }
-    }, [])
+    window.onscroll = () => {
+        setIsScrolled(window.pageYOffset <= 200 ? false : true);
+        return () => (window.onscroll = null);
+      };
 
     return (
-        <div className={(show && "topbar ") + (menuOpen && "active")}>
+        <div className={`${menuOpen && "active"} ${isScrolled ? "topbar scrolled" : "topbar"}`}>
             <div className="wrapper">
                 <div className="left">
                    <NavLink to="/" className="logo" ><span>R</span>C</NavLink>                 
