@@ -1,0 +1,34 @@
+@import "../../global.scss";
+
+.timer-container {
+  width: 150px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid $color-1;
+  border-radius: 60px;
+  font-size: 12px;
+  font-weight: 500;
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+
+      .cdp {
+        padding-top: 8px;
+      }
+    }
+  }
+}
+
+.timer-container:hover {
+  color: $mainColor;
+  background: $color-1;
+  cursor: not-allowed;
+}

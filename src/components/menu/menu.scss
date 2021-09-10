@@ -35,8 +35,9 @@
     .menuContainer {
       display: none;
 
-      @include mobile {
+      @include middle {
         display: inherit;
+        font-size: 15px;
       }
       div {
         font-weight: 500;
@@ -52,7 +53,7 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: 0.5s;
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
 
         font-weight: 700;
       }
@@ -62,7 +63,7 @@
       }
 
       a::before {
-        content: attr(dataText);
+        content: attr(datatext);
         position: absolute;
         font-size: 0.6em;
         color: chartreuse;
@@ -72,13 +73,13 @@
         white-space: nowrap;
         margin: 16px 0 0 26px;
         opacity: 0;
-        transition: 0.6s;
+        transition: 0.5s;
       }
 
       a:hover::before {
         opacity: 1;
         letter-spacing: 6.5px;
-        transition-delay: 0.4s;
+        transition-delay: 0.3s;
       }
 
       span {

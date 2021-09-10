@@ -1,5 +1,6 @@
-$mainColor: #30005e;
-$color-1: #80ff00;
+$mainColor: rgb(48, 0, 94);
+$mainColor-op: #31005eab;
+$color-1: rgb(128, 255, 0);
 $color-2: #9d59d9;
 $color-3: #9d59d918;
 $color-4: #9d59d98e;
@@ -8,10 +9,17 @@ $color-6: #31005ead;
 $error: rgb(240, 25, 25);
 
 $mobileWidth: 500px;
+$middleWidth: 760px;
 $tabWidth: 1060px;
 
 @mixin mobile {
   @media (max-width: #{$mobileWidth}) {
+    @content;
+  }
+}
+
+@mixin middle {
+  @media (max-width: #{$middleWidth}) {
     @content;
   }
 }

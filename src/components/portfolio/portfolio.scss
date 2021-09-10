@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +8,10 @@
 
   @include mobile {
     padding-top: 20px;
+    height: auto;
+  }
+  @include tab {
+    height: auto;
   }
 
   h1 {
