@@ -34,6 +34,23 @@
       padding-top: 10px;
     }
 
+    p {
+      color: transparent;
+      background: $mainColor;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 3px 3px $color-4;
+      padding-bottom: 10px;
+      overflow-y: hidden;
+      text-decoration: underline chartreuse;
+
+      @include middle {
+        padding-bottom: 10px;
+        font-size: 12px;
+      }
+    }
+
     h2 {
       font-size: 30px;
       color: transparent;
@@ -42,12 +59,7 @@
       -moz-background-clip: text;
       background-clip: text;
       text-shadow: 0px 3px 3px $color-4;
-      padding-bottom: 20px;
-
-      @include mobile {
-        padding-bottom: 10px;
-        font-size: 20px;
-      }
+      overflow-y: hidden;
 
       span {
         font-size: 40px;
@@ -60,7 +72,7 @@
         text-shadow: 0px 3px 3px $color-1;
 
         @include mobile {
-          font-size: 25px;
+          font-size: 35px;
         }
       }
     }

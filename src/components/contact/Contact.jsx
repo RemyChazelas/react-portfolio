@@ -92,7 +92,8 @@ export default function Contact() {
                 <img src="assets/shake.svg" alt="" />
             </div>
             <div className="right">
-                <h2><span>C</span>ontact</h2>
+                <h2><span>C</span>ontactez-moi</h2>
+                <p>Actuellement je recherche activement un stage.</p>
                 <form>
                     <input
                         type="text"

@@ -1,6 +1,6 @@
-$mainColor: rgb(48, 0, 94);
+$mainColor: #30005e;
 $mainColor-op: #31005eab;
-$color-1: rgb(128, 255, 0);
+$color-1: #80ff00;
 $color-2: #9d59d9;
 $color-3: #9d59d918;
 $color-4: #9d59d98e;
@@ -8,7 +8,7 @@ $color-5: rgba(128, 255, 0, 0.5);
 $color-6: #31005ead;
 $error: rgb(240, 25, 25);
 
-$mobileWidth: 500px;
+$mobileWidth: 520px;
 $middleWidth: 760px;
 $tabWidth: 1060px;
 
@@ -25,7 +25,7 @@ $tabWidth: 1060px;
 }
 
 @mixin tab {
-  @media (min-width: 501px) and (max-width: #{$tabWidth}) {
+  @media (min-width: 521px) and (max-width: #{$tabWidth}) {
     @content;
   }
 }

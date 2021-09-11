@@ -12,7 +12,7 @@
   }
 
   &.active {
-    background-color: $color-2;
+    background-color: $mainColor-op;
     color: white;
     text-decoration: underline $color-1;
     transition: 0.5s;

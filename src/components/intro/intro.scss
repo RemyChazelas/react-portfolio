@@ -9,6 +9,13 @@
     align-items: center;
     height: auto;
   }
+
+  @include middle {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
   @include tab {
     height: auto;
   }
@@ -69,9 +76,15 @@
     position: relative;
     overflow-y: hidden;
 
+    @include middle {
+      flex: none;
+      width: 90%;
+      padding-top: 40px;
+    }
+
     @include tab {
       flex: 0.55;
-      padding-top: 100px;
+      padding-top: 60px;
     }
 
     .wrapper {
@@ -82,7 +95,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile {
+      @include middle {
         padding-left: 0;
         align-items: center;
       }
@@ -147,41 +160,22 @@
         }
       }
 
-      ul {
+      h2 {
         padding-left: 10px;
-        display: flex;
-        flex-direction: row;
 
-        li {
-          font-size: 40px;
-          font-weight: 500;
-          padding-top: 20px;
-          color: transparent;
-          background: $mainColor;
-          -webkit-background-clip: text;
-          -moz-background-clip: text;
-          background-clip: text;
-          text-shadow: 0px 3px 3px $color-4;
-          transition: 2s;
-
-          @include mobile {
-            font-size: 20px;
-          }
-          @include tab {
-            font-size: 20px;
-          }
-        }
-
-        li:hover,
-        li:hover ~ li {
-          transform: rotate(150deg) translateY(-50px);
-          transition: 2s;
-          filter: blur(20px);
-          opacity: 0;
-        }
+        padding-top: 20px;
+        color: transparent;
+        background: $mainColor;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile {
-          padding: 0;
+          font-size: 20px;
+        }
+        @include tab {
+          font-size: 20px;
         }
       }
 
