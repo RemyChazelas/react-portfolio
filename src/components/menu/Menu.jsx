@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
+import { Person, Mail } from "@material-ui/icons";
+
 import Countdown from "../countdown/Countdown";
+
 import "./menu.scss";
 
 
@@ -21,10 +24,12 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 </li>
 
                 <li className="menuContainer">
-                    <div>06 66 62 19 83</div>
+                    <Person className="icon" />
+                    <div>0666621983</div>
                 </li>
                 <li className="menuContainer">
-                    <div>remychazelas@gmail.com</div>
+                    <Mail className="icon" />
+                    <div>contact@remychazelas.com</div>
                 </li>
                 <Countdown/>
             </ul>

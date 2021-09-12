@@ -12,7 +12,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     const [isScrolled, setIsScrolled] = useState(false);
 
     window.onscroll = () => {
-        setIsScrolled(window.pageYOffset <= 200 ? false : true);
+        setIsScrolled(window.pageYOffset <= 50 ? false : true);
         return () => (window.onscroll = null);
       };
 
@@ -23,11 +23,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                    <NavLink to="/" className="logo" ><span>R</span>C</NavLink>                 
                     <div className="itemContainer">
                         <Person className="icon" />
-                        <span>06 66 62 19 83</span>
+                        <span>0666621983</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon" />
-                        <span>remychazelas@gmail.com</span>
+                        <span>contact@remychazelas.com</span>
                     </div>
                     <div className="socialNetwork">
                         <a 

@@ -59,8 +59,8 @@ export default function Portfolio() {
             <div className="container">
                 {data.map((d) => (
                     <a 
-                    rel="noopener noreferrer" 
                     href={d.link} 
+                    rel="noopener noreferrer" 
                     target="_blank"
                     className="item" 
                     style={ d.link === "" ? {cursor: "not-allowed"} : {cursor: "pointer"}}>

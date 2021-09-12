@@ -1,8 +1,9 @@
 @import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .intro {
   display: flex;
-  height: 100vh;
+  height: 700px;
 
   @include mobile {
     flex-direction: column;
@@ -79,7 +80,7 @@
     @include middle {
       flex: none;
       width: 90%;
-      padding-top: 40px;
+      padding-top: 20px;
     }
 
     @include tab {
@@ -105,36 +106,47 @@
       }
 
       p {
+        font-family: "Roboto Mono", monospace;
+        letter-spacing: -0.5px;
+        text-align: justify;
         margin: 10px;
-        width: 440px;
-        line-height: 1.5;
-        color: transparent;
-        background: $mainColor;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        text-shadow: 0px 3px 3px $color-4;
+        width: 400px;
+        line-height: 1.4;
+        overflow-y: hidden;
 
         @include mobile {
           font-size: 14px;
           margin-left: 6px;
-          width: 300px;
+          width: 280px;
         }
         @include tab {
           font-size: 14px;
-          width: 350px;
+          width: 300px;
+        }
+      }
+
+      .cv {
+        margin: 5px 0 0 10px;
+        border-radius: 10px;
+        width: 160px;
+        padding: 10px;
+        background-color: $mainColor-op;
+        color: white;
+        text-decoration: underline $color-1;
+        transition: 0.5s;
+        border: 1px solid chartreuse;
+        @include middle {
+          margin: 5px 0 10px 10px;
         }
       }
 
       h1 {
         font-size: 60px;
         margin: 10px;
-        color: transparent;
         background: $mainColor;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
-        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile {
           font-size: 40px;
@@ -149,7 +161,7 @@
           -webkit-background-clip: text;
           -moz-background-clip: text;
           background-clip: text;
-          text-shadow: 0px 3px 3px $color-1;
+          text-shadow: 0px 2px 1px $color-1;
 
           @include mobile {
             font-size: 60px;
@@ -162,14 +174,12 @@
 
       h2 {
         padding-left: 10px;
-
+        font-family: "Roboto Mono", monospace;
+        letter-spacing: -0.8px;
         padding-top: 20px;
-        color: transparent;
-        background: $mainColor;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        text-shadow: 0px 3px 3px $color-4;
+        small {
+          font-weight: normal;
+        }
 
         @include mobile {
           font-size: 20px;
@@ -180,14 +190,10 @@
       }
 
       h4 {
+        font-family: "Roboto Mono", monospace;
+        letter-spacing: -0.5px;
         margin: 10px;
         text-decoration: underline $color-1;
-        color: transparent;
-        background: $mainColor;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile {
           font-size: 16px;
@@ -201,12 +207,6 @@
       h3 {
         margin: 10px;
         font-size: 30px;
-        color: transparent;
-        background: $mainColor;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        text-shadow: 0px 3px 3px $color-4;
 
         @include mobile {
           font-size: 20px;
@@ -220,12 +220,6 @@
         span {
           text-decoration: underline $color-1;
           font-size: inherit;
-          color: transparent;
-          background: $mainColor;
-          -webkit-background-clip: text;
-          -moz-background-clip: text;
-          background-clip: text;
-          text-shadow: 0px 3px 3px $color-4;
         }
 
         .ityped-cursor {
@@ -242,17 +236,17 @@
         }
       }
     }
-    a {
+    .arrow {
       position: absolute;
-      bottom: 60px;
-      left: 40%;
+      bottom: 90px;
+      left: 50%;
 
       @include mobile {
-        bottom: 185px;
+        bottom: 280px;
         left: 10%;
       }
       @include tab {
-        bottom: 165px;
+        bottom: 260px;
         left: 50%;
       }
       img {

@@ -1,0 +1,25 @@
+@import "../../global.scss";
+
+.copyright {
+  background-color: $mainColor;
+  text-align: left;
+  padding: 1rem 0;
+  .para {
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -0.5px;
+    margin-left: 10px;
+    color: transparent;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 1px 1px $color-3;
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  @include mobile {
+    margin-top: 0;
+  }
+}

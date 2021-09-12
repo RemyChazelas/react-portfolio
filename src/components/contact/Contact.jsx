@@ -93,7 +93,17 @@ export default function Contact() {
             </div>
             <div className="right">
                 <h2><span>C</span>ontactez-moi</h2>
-                <p>Actuellement je recherche activement un stage.</p>
+                <div className="stage">
+                <p>Je recherche activement un&nbsp;</p>
+                <ul>
+                    <li>s</li>
+                    <li>t</li>
+                    <li>a</li>
+                    <li>g</li>
+                    <li>e</li>                   
+                    <li>.</li>                   
+                </ul>
+                </div>
                 <form>
                     <input
                         type="text"
